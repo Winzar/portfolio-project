@@ -146,13 +146,11 @@ body {
   .landing {
     flex-direction: column;
   }
-
-  .landing #landing-text-container {
+  .landing__left-container {
     width: 95%;
     text-align: center;
   }
-
-  .landing #landing-image-container {
+  .landing__right-container {
     display: none;
     width: 0%;
   }

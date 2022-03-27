@@ -212,17 +212,19 @@ body {
     .landing{
         flex-direction: column; // if put to row, displays the other div
         //flex-wrap: wrap;
+        
+        &__left-container {
+            width: 95%;
+            text-align: center;
+        }
+    
+        &__right-container {
+            display: none;
+            width: 0%;
+        }
+
     }
 
-    .landing #landing-text-container {
-        width: 95%;
-        text-align: center;
-    }
-
-    .landing #landing-image-container{
-         display: none;
-         width: 0%;
-       }
 
     .about #about-boxes{
         display: flex;
