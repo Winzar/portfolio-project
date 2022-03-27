@@ -62,6 +62,7 @@ body {
 .about__title {
   text-align: center;
   color: #7A97FF;
+  padding-top: 15px;
 }
 .about__left-subcontainer {
   width: 70%;
@@ -117,7 +118,7 @@ body {
   background-color: #7A97FF;
 }
 .contact__title {
-  padding-top: 5px;
+  padding-top: 15px;
   color: white;
   text-align: center;
 }
@@ -181,16 +182,18 @@ body {
   .projects__text-header {
     text-align: center;
   }
+  .projects__image {
+    width: 90%;
+  }
 
-  .contact #contact-emailbox {
+  .contact__bottom-container {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-content: center;
     flex-wrap: wrap;
   }
-
-  .contact #contact-emailbox img {
+  .contact__icon {
     width: 50px;
     color: white;
     display: block;
