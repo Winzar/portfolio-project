@@ -128,7 +128,7 @@ body {
         color: #7A97FF;
     }
 
-    &__lower-container {
+    &__lower-containers {
         display: flex;
         justify-content: center;
         flex-direction: row;
@@ -225,39 +225,38 @@ body {
 
     }
 
-
-    .about #about-boxes{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        // background-color: blue;
-    }
-
-    .about #about-title {
-        text-align: center;
-    }
-
-    .about #about-image{
-        width: 40vh;
-    }
-
-    .about #about-text {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        //padding-left: 10px;
-        text-align: center;
-    }
-
-    .projects { 
-        
-        #projects-container {
+    .about{
+        &__bottom-containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
             flex-wrap: wrap;
         }
 
-        .project-text h3{
+        &__title{
+            text-align:center;
+        }
+
+        &__right-subcontainer{
+            width: 40vh;
+        }
+    
+        &__left-subcontainer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            //padding-left: 10px;
+            text-align: center;
+        }
+    }
+
+    .projects { 
+        &__lower-containers {
+            flex-wrap: wrap;
+        }
+
+        &__text-header {
             text-align: center;
         }
     }
