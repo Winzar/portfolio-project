@@ -57,7 +57,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.about__containers {
+.about__bottom-containers {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,14 +67,14 @@ body {
   text-align: center;
   color: #7A97FF;
 }
-.about__left-container {
+.about__left-subcontainer {
   width: 70%;
   padding-left: 10px;
   text-align: left;
   font-size: 2.5vh;
   font-family: "Nunito Sans", Helvetica, sans-serif;
 }
-.about__right-container {
+.about__right-subcontainer {
   width: 29vw;
 }
 .about__image {
