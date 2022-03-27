@@ -32,20 +32,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.landing #landing-text-container {
+.landing__left-container {
   width: 70vw;
   text-align: center;
 }
-.landing h1 {
+.landing__large-text {
   font-size: 5vh;
 }
-.landing p {
+.landing__small-text {
   font-size: 4vh;
 }
-.landing #landing-image-container {
+.landing__right-container {
   width: 29vw;
 }
-.landing img {
+.landing__image {
   width: 100%;
 }
 

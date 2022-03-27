@@ -46,23 +46,23 @@ body {
     align-items: center;
     //flex-wrap: wrap;
 
-    #landing-text-container {
+    &__left-container{
         width: 70vw;
         text-align: center;
     }
 
-    h1 {
+    &__large-text{
         font-size: 5vh;
     }
-    p {
+    &__small-text{
         font-size: 4vh;
     }
     
-    #landing-image-container {
+    &__right-container{
         width: 29vw;
     }
     
-    img{
+    &__image{
         width: 100%;
         // display: block;
         // margin-left: auto;
