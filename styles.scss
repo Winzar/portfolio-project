@@ -75,11 +75,6 @@ body {
 /* Style the content */
 .about {
     background-color: rgba(229, 229, 229, 0.29);
-    //height: 200px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
 
     &__bottom-containers{
         display: flex;
@@ -169,13 +164,13 @@ body {
 .contact {
     background-color: #7A97FF;
 
-    #contact-title {
+    &__title {
         padding-top: 5px;
         color: white;
         text-align: center;
     }
 
-    #contact-emailbox{
+    &__bottom-container{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -183,14 +178,14 @@ body {
         
     }
 
-    #contact-emailbox img {
+    &__icon {
         width: 50px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #contact-emailbox p {
+    &__text {
         font-size: 100%;
         color: white;
         text-align: center;
@@ -200,16 +195,6 @@ body {
         
     }
 
-    #contact-emailbox p {
-        font-size: 100%;
-        color: white;
-        text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-    
 }
 
 
