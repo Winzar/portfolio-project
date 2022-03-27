@@ -8,22 +8,21 @@ body {
   font-family: "Nunito", Helvetica, sans-serif;
 }
 
-.topnav {
+.nav {
   background-color: #7A97FF;
   padding: 1px;
 }
-.topnav p {
+.nav__container {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
-.topnav a {
+.nav__item {
   color: white;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
 }
-.topnav a:hover {
+.nav__item:hover {
   text-decoration: underline;
 }
 
