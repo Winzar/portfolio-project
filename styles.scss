@@ -128,34 +128,38 @@ body {
 
 .projects {
 
-    #projects-title {
+    &__title {
         text-align: center;
         color: #7A97FF;
     }
 
-    #projects-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
+    &__lower-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
     }
 
-    #projects-container img {
-    width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
-    
-    .project-text {
+    &__image{
         width: 90%;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        font-family: "Nunito Sans", Helvetica, sans-serif;
     }
-    .project-text h3{
+    
+    &__text-container {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text-header{
     color: #7A97FF;
+    }   
+
+    &__text-description{
+        font-family: "Nunito Sans", Helvetica, sans-serif;
     }
     
 }

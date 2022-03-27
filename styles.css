@@ -87,31 +87,33 @@ body {
   -moz-columns: 2;
 }
 
-.projects #projects-title {
+.projects__title {
   text-align: center;
   color: #7A97FF;
 }
-.projects #projects-container {
+.projects__lower-container {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-content: center;
 }
-.projects #projects-container img {
+.projects__image {
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.projects .project-text {
+.projects__text-container {
   width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Nunito Sans", Helvetica, sans-serif;
 }
-.projects .project-text h3 {
+.projects__text-header {
   color: #7A97FF;
+}
+.projects__text-description {
+  font-family: "Nunito Sans", Helvetica, sans-serif;
 }
 
 /* Style the footer */
