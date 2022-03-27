@@ -81,7 +81,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
 
-    #about-boxes{
+    &__containers{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -89,12 +89,12 @@ body {
         // flex-wrap: wrap;
     }
 
-    #about-title {
+    &__title {
         text-align: center;
         color: #7A97FF;
     }
 
-    #about-text {
+    &__left-container {
         // width: 70vw;
         width: 70%;
         padding-left: 10px;
@@ -106,18 +106,18 @@ body {
         
     }
     
-    #about-image {
+    &__right-container {
         width: 29vw;
         // display: block;
         // margin-left: auto;
         // margin-right: auto;
     }
 
-    #about-image img {
+    &__image{
         width: 100%;    
     }
 
-    #about-text-list {
+    &__list {
     columns: 2;
     margin: auto;
     -webkit-columns: 2;  // came with example code, probably provides basis for other web browser but without works on chrome and mozilla
