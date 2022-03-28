@@ -8,7 +8,7 @@
 
 ## General info
 
-Website generally set up using flex and media queries in order to adjust to website size.
+Code for my portofolio. Sass files are seperated out into partials and the unedited version of the sass file is in the old_styles file. Website generally set up using flex and media queries in order to adjust to website size.
 
 ## Nav
 
