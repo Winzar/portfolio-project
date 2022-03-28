@@ -18,6 +18,10 @@ Contains a hover over underline feature, along with an anchor to other places in
 
 Image no longer displays when reaching certain resolutions, text also resizes depending on media query.
 
+## Projects
+
+Flex direction changes to row at tablet level media queries. Then returns to column at phone level media queries.
+
 ## About
 
 Flex direction changes to column when reaching smaller media queries
