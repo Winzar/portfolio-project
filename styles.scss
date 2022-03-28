@@ -116,8 +116,9 @@ body {
     &__list {
     columns: 2;
     margin: auto;
+    text-align: left;
     -webkit-columns: 2;  // came with example code, probably provides basis for other web browser but without works on chrome and mozilla
-    -moz-columns: 2;
+    -moz-columns: 2;    // possibly add icons instead
     }
 }
 

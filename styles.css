@@ -80,6 +80,7 @@ body {
 .about__list {
   columns: 2;
   margin: auto;
+  text-align: left;
   -webkit-columns: 2;
   -moz-columns: 2;
 }
