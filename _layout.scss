@@ -1,0 +1,577 @@
+.nav {
+    background-color: #7A97FF;
+    // display: flex;
+    // justify-content: center;
+    //flex-wrap: wrap;
+    padding:1px;
+
+    &__container{
+    display: flex;
+    justify-content: space-around;
+    //flex-wrap: wrap;
+    }
+
+    &__item {
+    color: white;
+    //padding: 38px;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    &__item:hover {
+        //background-color: #ddd;
+        text-decoration: underline;
+        //color: black;
+    }
+}
+
+.landing {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //flex-wrap: wrap;
+
+    &__left-container{
+        width: 70vw;
+        text-align: center;
+    }
+
+    &__large-text{
+        font-size: 5vh;
+    }
+    &__small-text{
+        font-size: 4vh;
+    }
+    
+    &__right-container{
+        width: 29vw;
+    }
+    
+    &__image{
+        width: 100%;
+        // display: block;
+        // margin-left: auto;
+        //justify-content: flex-end;
+    }
+}
+
+
+
+/* Style the content */
+.about {
+    background-color: rgba(229, 229, 229, 0.29);
+
+    &__bottom-containers{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        // flex-wrap: wrap;
+    }
+
+    &__title {
+        text-align: center;
+        color: #7A97FF;
+        padding-top: 15px;
+    }
+
+    &__left-subcontainer {
+        // width: 70vw;
+        width: 70%;
+        padding-left: 10px;
+        //width: 100%;
+        text-align: left;
+        //display: block;
+        font-size: 2.5vh;
+        font-family: "Nunito Sans", Helvetica, sans-serif;
+        
+    }
+    
+    &__right-subcontainer {
+        width: 29vw;
+        // display: block;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+
+    &__image{
+        width: 100%;    
+    }
+
+    &__list {
+    columns: 2;
+    margin: auto;
+    text-align: left;
+    -webkit-columns: 2;  // came with example code, probably provides basis for other web browser but without works on chrome and mozilla
+    -moz-columns: 2;    // possibly add icons instead
+    }
+}
+
+
+.projects {
+
+    &__title {
+        text-align: center;
+        color: #7A97FF;
+    }
+
+    &__lower-containers {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    &__image{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    &__text-container {
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text-header{
+    color: #7A97FF;
+    }   
+
+    &__text-description{
+        font-family: "Nunito Sans", Helvetica, sans-serif;
+    }
+    
+}
+
+
+/* Style the footer */
+.contact {
+    background-color: #7A97FF;
+
+    &__title {
+        padding-top: 15px;
+        color: white;
+        text-align: center;
+    }
+
+    &__bottom-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+
+    &__icon {
+        width: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text {
+        font-size: 100%;
+        color: white;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+}
+
+//Ipad Air
+@media only screen and (width: 820px) and (height: 1180px) {
+    .landing{
+        flex-direction: column; // if put to row, displays the other div
+        //flex-wrap: wrap;
+
+        &__left-container {
+            width: 95%;
+            text-align: center;
+        }
+
+        &__large-text {
+            font-size: 4vh;
+        }
+        &__small-text {
+            font-size: 3vh;
+        }
+
+        &__right-container {
+            display: none;
+            width: 0%;
+        }
+
+    }
+
+    .about{
+        &__bottom-containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &__title{
+            text-align:center;
+        }
+
+        &__right-subcontainer{
+            width: 30vh;
+        }
+    
+        &__left-subcontainer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            //padding-left: 10px;
+            text-align: center;
+        }
+    }
+
+    .projects { 
+        &__lower-containers {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        &__text-header {
+            text-align: center;
+        }
+        &__image {
+            width: 80%;
+        }
+        &__text-container{
+            width:100%;
+        }
+        &__project-container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+    }
+
+    .contact{
+        
+        &__bottom-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-content: center;
+        //margin-left: 5vh;
+        flex-wrap: wrap;
+        //margin-right:auto;
+        }
+
+       &__icon {
+        //height: auto;
+        width: 50px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }  
+    }
+}
+
+// //Ipad Mini
+@media only screen and (width: 768px) and (height: 1024px) {
+    .landing{
+        flex-direction: column; // if put to row, displays the other div
+        //flex-wrap: wrap;
+
+        &__left-container {
+            width: 95%;
+            text-align: center;
+        }
+
+        &__large-text {
+            font-size: 4vh;
+        }
+        &__small-text {
+            font-size: 3vh;
+        }
+
+        &__right-container {
+            display: none;
+            width: 0%;
+        }
+
+    }
+
+    .about{
+        &__bottom-containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &__title{
+            text-align:center;
+        }
+
+        &__right-subcontainer{
+            width: 30vh;
+        }
+    
+        &__left-subcontainer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            //padding-left: 10px;
+            text-align: center;
+        }
+    }
+
+    .projects { 
+        &__lower-containers {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        &__text-header {
+            text-align: center;
+        }
+        &__image {
+            width: 80%;
+        }
+        &__text-container{
+            width:100%;
+        }
+        &__project-container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+    }
+
+    .contact{
+        
+        &__bottom-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-content: center;
+        //margin-left: 5vh;
+        flex-wrap: wrap;
+        //margin-right:auto;
+        }
+
+       &__icon {
+        //height: auto;
+        width: 50px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }  
+    }
+}
+
+
+
+
+@media only screen and (width: 912px) and (height: 1368px) {
+    .landing{
+        flex-direction: column; // if put to row, displays the other div
+        //flex-wrap: wrap;
+
+        &__left-container {
+            width: 95%;
+            text-align: center;
+        }
+
+        &__large-text {
+            font-size: 4vh;
+        }
+        &__small-text {
+            font-size: 3vh;
+        }
+
+        &__right-container {
+            display: none;
+            width: 0%;
+        }
+
+    }
+
+    .about{
+        &__bottom-containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &__title{
+            text-align:center;
+        }
+
+        &__right-subcontainer{
+            width: 30vh;
+        }
+    
+        &__left-subcontainer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            //padding-left: 10px;
+            text-align: center;
+        }
+    }
+
+    .projects { 
+        &__lower-containers {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        &__text-header {
+            text-align: center;
+        }
+        &__image {
+            width: 80%;
+        }
+        &__text-container{
+            width:100%;
+        }
+        &__project-container{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 10px;
+        }
+
+    }
+
+    .contact{
+        
+        &__bottom-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-content: center;
+        //margin-left: 5vh;
+        flex-wrap: wrap;
+        //margin-right:auto;
+        }
+
+       &__icon {
+        //height: auto;
+        width: 50px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }  
+    }
+    
+}
+
+//page for each section, write media queries for each
+
+@media only screen and (max-width: 600px) {
+
+    .landing{
+        flex-direction: column; // if put to row, displays the other div
+        //flex-wrap: wrap;
+        
+        &__left-container {
+            width: 95%;
+            text-align: center;
+        }
+
+        &__large-text {
+            font-size: 4vh;
+        }
+        &__small-text {
+            font-size: 3vh;
+        }
+
+        &__right-container {
+            display: none;
+            width: 0%;
+        }
+
+    }
+
+    .about{
+        &__bottom-containers{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &__title{
+            text-align:center;
+        }
+
+        &__right-subcontainer{
+            width: 40vh;
+        }
+    
+        &__left-subcontainer{
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            //padding-left: 10px;
+            text-align: center;
+        }
+    }
+
+    .projects { 
+        &__lower-containers {
+            flex-wrap: wrap;
+        }
+
+        &__text-header {
+            text-align: center;
+        }
+        &__image {
+            width: 90%;
+        }
+    }
+
+    .contact{
+        
+        &__bottom-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-content: center;
+        //margin-left: 5vh;
+        flex-wrap: wrap;
+        //margin-right:auto;
+        }
+
+       &__icon {
+        //height: auto;
+        width: 50px;
+        color: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       }  
+    }
+
+  }
